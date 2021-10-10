@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="HTML5 , CSS , JavaScript , Bootstrap , upload , upload , jquery , ES6 , Project , js , event, upload progress bar">
+        <meta name="description" content="Create Project Upload Progress Bar">
+        <meta http-equiv="author" content="Hossein Ghorbanloo">
+        <!-- <meta http-equiv="refresh" content="200 "> -->
+
+        <!-- Inter Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link rel="stylesheet" href="./vendor/css/bootstrap/bootstrap.min.css">
+
+        <!-- Custom CSS File -->
+        <link rel="stylesheet" href="./src/css/index.css">
+
+        <!-- Title Info and Title Icon -->
+        <link rel="icon" href="./public/icons/title.png">
+        <link rel="apple-touch-icon" href="./public/icons/title.png">
+        <title>Upload with Progress Bar</title>
+    </head>
+    <body>
+       
+        <section class="min-vh-100 bg-warning bg-gradient">
+            <div class="container">
+                <div class="row">
+                    <div class="col mx-auto pt-5">
+                        <h1 class="display-4 text-center mb-5">Upload File Project</h1>
+                        <form action="" method="POST" id="form">
+                            <div class="form-group mx-auto w-50">
+                                <label for="uploadFile" class="mb-2 h4 mt-5">File :</label>
+                                <input type="file" name="file" id="uploadFile" class="form-control">
+                                <button type="submit" class="btn btn-success mt-3">Submit</button>
+                            </div>
+                        </form>
+                        <section class="mt-4 w-50 mx-auto d-none" id="progress">
+                            <div class="progress text-center">
+                                <div class="porgress-bar align-self-center progress-bar-striped progress-bar-animated bg-primary text-white" style="width: 0%">0%</div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Axios CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js" integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- JS Main File -->
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
